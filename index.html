@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangreja - Modern Educational Platform</title>
+    <meta name="description" content="Rangreja - Your gateway to modern education with interactive learning, live classes, and comprehensive study materials">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Rangreja</h2>
+                <span class="logo-tagline">Learn • Grow • Excel</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#subjects" class="nav-link">Subjects</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#live" class="nav-link">Live Classes</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="login-btn">Login</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to <span class="gradient-text">Rangreja</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the future of education with interactive learning, live classes, 
+                    and personalized study materials designed for modern students.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Start Learning
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-video"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Lectures</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Subjects</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card floating">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="subject-preview">
+                            <div class="subject-icon">📚</div>
+                            <div class="subject-info">
+                                <h4>Mathematics</h4>
+                                <p>Interactive Problem Solving</p>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Subject</h2>
+                <p class="section-subtitle">Explore our comprehensive range of subjects designed for different grade levels</p>
+            </div>
+            
+            <div class="grade-tabs">
+                <button class="tab-btn active" data-grade="9">Class 9th</button>
+                <button class="tab-btn" data-grade="10">Class 10th</button>
+                <button class="tab-btn" data-grade="11">Class 11th</button>
+            </div>
+            
+            <div class="subjects-grid" id="subjects-grid">
+                <!-- Grade 9 Subjects -->
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>Algebra, Geometry, Statistics and more</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 150+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 50+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+                
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Biology concepts</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 200+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 75+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+                
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Social Science</h3>
+                    <p>History, Geography, Civics, Economics</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 120+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 60+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+                
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Grammar, Literature, Communication Skills</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 100+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 40+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+                
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Hindi</h3>
+                    <p>व्याकरण, साहित्य, लेखन कौशल</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 80+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 35+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+                
+                <div class="subject-card" data-grade="9">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <p>Programming, IT Skills, Digital Literacy</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-video"></i> 90+ Videos</span>
+                        <span><i class="fas fa-file-alt"></i> 30+ Notes</span>
+                    </div>
+                    <button class="card-btn">Explore Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Rangreja?</h2>
+                <p class="section-subtitle">Discover the features that make learning effective and enjoyable</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>HD Video Lectures</h3>
+                    <p>Crystal clear video lectures with expert teachers explaining complex concepts in simple terms</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>Live Classes</h3>
+                    <p>Interactive live sessions with real-time doubt clearing and student engagement</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <h3>Study Materials</h3>
+                    <p>Comprehensive notes, practice papers, and reference materials for thorough preparation</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Practice Tests</h3>
+                    <p>Regular assessments and mock tests to track progress and improve performance</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access your courses anywhere, anytime with our responsive mobile-optimized platform</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical and academic support to help you succeed in your learning journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Classes Section -->
+    <section id="live" class="live-classes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Classes</h2>
+                <p class="section-subtitle">Join interactive live sessions with experienced teachers</p>
+            </div>
+            
+            <div class="live-schedule">
+                <div class="schedule-card">
+                    <div class="schedule-header">
+                        <div class="live-indicator">
+                            <span class="live-dot"></span>
+                            LIVE NOW
+                        </div>
+                        <div class="schedule-time">2:00 PM - 3:00 PM</div>
+                    </div>
+                    <h3>Mathematics - Quadratic Equations</h3>
+                    <p>Advanced problem-solving techniques and applications</p>
+                    <div class="schedule-teacher">
+                        <img src="https://via.placeholder.com/40" alt="Teacher">
+                        <span>Prof. Sharma</span>
+                    </div>
+                    <button class="join-btn">Join Now</button>
+                </div>
+                
+                <div class="schedule-card upcoming">
+                    <div class="schedule-header">
+                        <div class="upcoming-indicator">UPCOMING</div>
+                        <div class="schedule-time">4:00 PM - 5:00 PM</div>
+                    </div>
+                    <h3>Science - Chemical Reactions</h3>
+                    <p>Understanding chemical equations and balancing</p>
+                    <div class="schedule-teacher">
+                        <img src="https://via.placeholder.com/40" alt="Teacher">
+                        <span>Dr. Patel</span>
+                    </div>
+                    <button class="notify-btn">Set Reminder</button>
+                </div>
+                
+                <div class="schedule-card upcoming">
+                    <div class="schedule-header">
+                        <div class="upcoming-indicator">UPCOMING</div>
+                        <div class="schedule-time">6:00 PM - 7:00 PM</div>
+                    </div>
+                    <h3>Social Science - Indian Constitution</h3>
+                    <p>Fundamental rights and duties explained</p>
+                    <div class="schedule-teacher">
+                        <img src="https://via.placeholder.com/40" alt="Teacher">
+                        <span>Mrs. Gupta</span>
+                    </div>
+                    <button class="notify-btn">Set Reminder</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Rangreja</h2>
+                    <p>Rangreja is a cutting-edge educational platform designed to revolutionize the way students learn. We combine traditional teaching methods with modern technology to create an engaging and effective learning experience.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Faculty with Years of Experience</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comprehensive Curriculum Coverage</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Interactive Learning Methods</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regular Progress Tracking</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x400" alt="Students Learning">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We're here to help you succeed</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>support@rangreja.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Education Street, Learning City, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rangreja</h3>
+                    <p>Empowering students with quality education and innovative learning solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#subjects">Subjects</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#live">Live Classes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Subjects</h4>
+                    <ul>
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Social Science</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rangreja. All rights reserved. Made with ❤️ for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

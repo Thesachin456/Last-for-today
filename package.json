@@ -1,0 +1,80 @@
+{
+  "name": "rangreja-website",
+  "version": "1.0.0",
+  "description": "Rangreja - Modern Educational Platform Website with interactive learning features",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=index.html",
+    "dev": "npx live-server --port=3000 --open=index.html --watch=.",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "npx cleancss-cli -o dist/styles.min.css styles.css",
+    "minify-js": "npx terser script.js -o dist/script.min.js --compress --mangle",
+    "optimize-images": "npx imagemin images/* --out-dir=dist/images",
+    "lint-css": "npx stylelint styles.css",
+    "lint-js": "npx eslint script.js",
+    "format": "npx prettier --write *.html *.css *.js *.md",
+    "validate-html": "npx html-validate index.html",
+    "lighthouse": "npx lighthouse http://localhost:3000 --output-path=./lighthouse-report.html --view",
+    "deploy": "npm run build && npx surge dist/ rangreja.surge.sh",
+    "test": "npm run validate-html && npm run lint-css && npm run lint-js"
+  },
+  "keywords": [
+    "education",
+    "learning",
+    "students",
+    "online-courses",
+    "interactive",
+    "modern-ui",
+    "responsive",
+    "dark-theme",
+    "educational-platform",
+    "rangreja"
+  ],
+  "author": {
+    "name": "Rangreja Team",
+    "email": "support@rangreja.com",
+    "url": "https://rangreja.com"
+  },
+  "license": "MIT",
+  "homepage": "https://rangreja.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rangreja/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rangreja/website/issues"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "imagemin-cli": "^7.0.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "html-validate": "^8.2.0",
+    "lighthouse": "^10.4.0",
+    "surge": "^0.23.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "config": {
+    "port": 3000
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundleDependencies": [],
+  "private": false,
+  "workspaces": [],
+  "type": "module"
+}
